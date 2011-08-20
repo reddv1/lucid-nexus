@@ -102,12 +102,11 @@ config FB_VOODOO
           This enables support Voodoo color mods
 
 config FB_VOODOO_DEBUG_LOG
-        bool "Verbose Super AMOLED driver logs"
+        bool "Super AMOLED command logs & decoding"
         depends on FB_VOODOO
         default n
         ---help---
-          Logging for developers
-          Super AMOLED hardware command decoding and driver calculations
+          Logging for developer
 
 config FB_S3C_NT35580
         bool "NT35580"
