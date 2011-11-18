@@ -27,6 +27,7 @@
 
 #ifdef CONFIG_BLD
 #include <linux/bld.h>
+#endif
 
 #ifdef CONFIG_TOUCH_WAKE
 #include <linux/touch_wake.h>
