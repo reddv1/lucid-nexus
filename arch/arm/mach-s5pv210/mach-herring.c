@@ -324,12 +324,12 @@ static struct s3cfb_lcd nt35580 = {
 	.bpp = 24,
 	.freq = 72,
 	.timing = {
-		.h_fp = 10,
-		.h_bp = 20,
-		.h_sw = 10,
-		.v_fp = 6,
+		.h_fp = 16,
+		.h_bp = 16,
+		.h_sw = 2,
+		.v_fp = 28,
 		.v_fpe = 1,
-		.v_bp = 8,
+		.v_bp = 1,
 		.v_bpe = 1,
 		.v_sw = 2,
 	},
@@ -432,24 +432,24 @@ static struct s5p_media_device herring_media_devs[] = {
 static struct s5pv210_cpufreq_voltage smdkc110_cpufreq_volt[] = {
 	{
 		.freq	= 1000000,
-		.varm	= 1275000,
-		.vint	= 1100000,
+		.varm	= 1225000,
+		.vint	= 1050000,
 	}, {
 		.freq	=  800000,
-		.varm	= 1200000,
-		.vint	= 1100000,
+		.varm	= 1175000,
+		.vint	= 1050000,
 	}, {
 		.freq	=  400000,
-		.varm	= 1050000,
-		.vint	= 1100000,
+		.varm	= 1000000,
+		.vint	= 1050000,
 	}, {
 		.freq	=  200000,
-		.varm	=  950000,
-		.vint	= 1100000,
+		.varm	=  900000,
+		.vint	= 1050000,
 	}, {
 		.freq	=  100000,
-		.varm	=  950000,
-		.vint	= 1000000,
+		.varm	=  900000,
+		.vint	=  950000,
 	},
 };
 
@@ -709,7 +709,7 @@ static struct regulator_init_data herring_buck1_data = {
 		.valid_ops_mask	= REGULATOR_CHANGE_VOLTAGE |
 				  REGULATOR_CHANGE_STATUS,
 		.state_mem	= {
-			.uV	= 1250000,
+			.uV	= 1500000,
 			.mode	= REGULATOR_MODE_NORMAL,
 			.disabled = 1,
 		},
@@ -727,7 +727,7 @@ static struct regulator_init_data herring_buck2_data = {
 		.valid_ops_mask	= REGULATOR_CHANGE_VOLTAGE |
 				  REGULATOR_CHANGE_STATUS,
 		.state_mem	= {
-			.uV	= 1100000,
+			.uV	= 1250000,
 			.mode	= REGULATOR_MODE_NORMAL,
 			.disabled = 1,
 		},
